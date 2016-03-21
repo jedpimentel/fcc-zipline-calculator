@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script language="javascript" type="text/javascript" src="script.js"></script>
+</head>
+
+<body><div class="center-content">
+	<div id="calculator">
+		<div id="second-line">&nbsp;&nbsp;&nbsp;okay calculator</div>
+		<!-- I resorted to the "screen-padder" as definingh width in 'ch' was broken in IE -->
+		<div id="screen-container"><div id="screen-padder">0123456789</div><div id="screen">test</div></div>
+		<div id="key-area">
+			<div class="key-row" id="test">
+				<!-- comments made to avoid unweanted space between buttons
+				there MUST be a better way to do this :'( -->
+				<button type="button" onclick="input('CE')"            >CE		</button><!--
+			 --><button type="button" onclick="input('C')"             >C		</button><!--
+			 --><button type="button" onclick="input('DELETE')"        >del		</button><!--
+			 --><button type="button" onclick="input('DIVIDE')"        >&divide;</button>
+			</div>
+			<div class="key-row">
+				<button type="button" onclick="input('7')" class="bold">7		</button><!--
+			 --><button type="button" onclick="input('8')" class="bold">8		</button><!--
+			 --><button type="button" onclick="input('9')" class="bold">9		</button><!--
+			 --><button type="button" onclick="input('MULTIPLY')">&times;		</button>
+			</div>
+			<div class="key-row">
+				<button type="button" onclick="input('4')" class="bold">4		</button><!--
+			 --><button type="button" onclick="input('5')" class="bold">5		</button><!--
+			 --><button type="button" onclick="input('6')" class="bold">6		</button><!--
+			 --><button type="button" onclick="input('SUBTRACT')"      >&minus;	</button>
+			</div>
+			<div class="key-row">
+				<button type="button" onclick="input('1')" class="bold">1		</button><!--
+			 --><button type="button" onclick="input('2')" class="bold">2		</button><!--
+			 --><button type="button" onclick="input('3')" class="bold">3		</button><!--
+			 --><button type="button" onclick="input('PLUS')"          >&plus;	</button>
+			</div>
+			<div class="key-row">
+				<button type="button" onclick="input('+-')"            >&plusmn;</button><!--
+			 --><button type="button" onclick="input('0')" class="bold">0		</button><!--
+			 --><button type="button" onclick="input('.')"             >&period;</button><!--
+			 --><button type="button" onclick="input('EQUAL')"         >&equals;</button>
+			</div>
+		</div>
+	</div>
+</div></body>
+
+</html>

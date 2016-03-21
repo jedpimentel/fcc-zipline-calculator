@@ -1,0 +1,81 @@
+body {
+	background-color: grey;
+	/*control size by modifying this font size*/
+	/*didn't try to make this "responsive" as it already zoomed well*/
+	/*seriously, change this font-size and see*/
+	font-size: 1em;
+	background-image: url("https://www.dropbox.com/s/iod5xp3x3gn2rx8/cowandcat.png?dl=1");
+	
+}
+
+.center-content {
+	text-align: center;
+	
+}
+
+#calculator {
+	text-align: left;
+	border: 2px solid black;
+	margin: auto;
+	/*width: 20ch;*/
+	display: inline-block;
+	padding: 1em;
+	background-color: white;
+	
+}
+
+#screen-container {
+	border: 1px solid black;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 0.25em;
+	font-family: Monospace;
+	font-size: 4em;
+	/* wanted to use `width: 10ch;` but it was only working properly in chrome*/
+	/* then tried `width: 5.5em;`, but it was broken in firefox for a linux user */
+	/* ended up creating a hidden "screen-padder" div with 10 chars */
+	text-align: right;
+	background-color: #EEE;
+}
+
+#screen-padder {
+	height: 0;
+	visibility: hidden;
+}
+
+#key-area {
+	display: block;
+	border: 1px solid black;
+	width: 20em;
+	margin: auto;
+}
+
+#key-area > div {
+	display: block;
+	/*border: 1px solid red;*/
+	text-align: center;
+}
+
+#key-area > div > button {
+	display: inline-block;
+	width: 25%;
+	height: 2em;
+	border: 1px solid black;
+	margin: 0;
+	font-family: monospace;
+	font-size: 200%;
+	background-color: #EEE;
+}
+
+#key-area > div > button:hover {
+	background-color: #CCC;
+}
+
+#key-area > div > button:focus {
+	outline: none;
+}
+
+.bold {
+	font-size: 120%;
+	font-weight: bold;
+}
